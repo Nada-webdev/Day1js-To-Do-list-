@@ -10,12 +10,12 @@ body{
 background-color:rgb(246, 182, 100) ;
 }
 .container{
-margin: 100px;
+margin: 200px
 
 }
 .container h1{
           text-align: center;
-          font-size: 45px;
+          font-size: 50px;
           text-shadow: 1px rgb(0, 0, 0);
           color: rgb(98, 61, 2);;
 }
@@ -35,6 +35,7 @@ display: flex;
 align-items: center;
 color: rgb(7, 7, 59);
 margin-bottom: 20px;
+font-size: 40px;
 
 }
 .To-Do h2 img{
@@ -48,8 +49,9 @@ align-items: center;
 }
 .row input{
           border: none;
-          font-weight: 14px;
-          padding: 15px;
+          font-weight: 20px;
+          font-size: 25px;
+          padding: 17px;
           border-radius: 10px;
           flex: 1;
           outline: none;
@@ -60,12 +62,12 @@ button{
           border-radius: 10px;
           background-color: rgb(255, 147, 23);
           color: white;
-          height: 45px;
+          height: 57px;
           width: 70px;
           border: none;
           text-align: center;
           outline: none;
-          font-size: 16px;
+          font-size: 19px;
           cursor: pointer;
           margin-bottom: 10px;
           
@@ -119,10 +121,18 @@ cursor: pointer;
         .To-Do{
           width: 100%;
         }
+        .row{
+          flex-direction: column;
+
+        }
+      
+
           .row input{
                    
-                    font-weight: 10px;
-                    padding: 10px;
+                    font-weight: 15px;
+                    padding: 15px;
+                    width: 100%;
+                  
                     
           }
           button{
@@ -131,5 +141,41 @@ cursor: pointer;
                     width: 60px;
                     margin-bottom: 10px;
                     
+                    
           }
+         
         }
+
+        @media only screen and (max-width: 425px) and (min-width:320px){
+          button{
+            height:30px ;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 12px;
+          }
+          .row input{
+            padding: 12px;
+            font-size: 12px;
+         
+          }
+          
+         .To-Do{
+          margin-top: 50px;
+         }
+          .To-Do h2 img{
+            height: 30px;
+            width: 30px; 
+   }
+   .To-Do h2{
+    font-size: 20px;
+   }
+            .container h1{
+              font-size: 25px;
+             
+            }
+            .container {
+              margin: 23px;
+          }
+          
+          }
+          
