@@ -1,2 +1,5 @@
+Simple Crud App
+A responsive To-Do list to track today improvment !
+using js to add and delete taks and send notifications .
 
-![todo](https://github.com/Nada-webdev/Day1js-To-Do-list-/assets/140740775/2bdb0630-5f78-410a-8322-ee660bf6b333)
+![img](https://github.com/Nada-webdev/Day1js-To-Do-list-/assets/140740775/741cbe20-38dd-427a-8dbb-634197cca512)
