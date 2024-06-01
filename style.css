@@ -147,7 +147,7 @@ cursor: pointer;
 @media screen and (min-width:320px) and (max-width:768px) {
   #motivationBox{
     width: 100%;
-    margin-left: 7%;
+    margin-left: 0px;
     
   }
   #motivation{
