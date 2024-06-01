@@ -1,4 +1,4 @@
-Simple Crud App
+Simple Crud App:
 A responsive To-Do list to track today improvment !
 using js to add and delete taks and send notifications .
 
