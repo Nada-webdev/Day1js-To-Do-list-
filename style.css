@@ -1,33 +1,60 @@
 *{
 
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-         
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
 body{
 background-color:rgb(246, 182, 100) ;
 }
 .container{
-margin: 200px
-
+  margin: 10px 67px 10px 62px;
 }
-.container h1{
-          text-align: center;
-          font-size: 50px;
-          text-shadow: 1px rgb(0, 0, 0);
-          color: rgb(98, 61, 2);;
+#motivationBox {
+    display: none;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+#motivation{
+  border: 0px solid black;
+    background-color: rgb(246, 232, 147);
+    color: rgb(85, 48, 1);
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 19px ;
+    position: relative;
+    text-align: center;
+  
+}
+#motivation::before{
+  content: '';
+  position: absolute;
+  background-image: url(./img/notification.png);
+  background-size: cover;
+  height: 28px;
+  width: 28px;
+  left: 10px;
+  top:18px
+ 
+}
+.mess{
+   text-align: center;
+   font-size: 40px;
+   text-shadow: 1px rgb(0, 0, 0);
+   color: rgb(98, 61, 2);;
 }
 .To-Do{
 
- background-color: rgb(255, 255, 255);
- max-height: 600px;
- width: 70%;
- border-radius: 10px;
- margin: 100px auto 20px;
- padding:  40px 30px 70px;
- border: 4px solid rgb(241, 238, 138);
+background-color: rgb(255, 255, 255);
+max-height: 600px;
+width: 70%;
+border-radius: 10px;
+margin: 100px auto 20px;
+padding:  40px 30px 70px;
+border: 4px solid rgb(241, 238, 138);
 
 }
 .To-Do h2{
@@ -39,56 +66,57 @@ font-size: 40px;
 
 }
 .To-Do h2 img{
-         height: 50px;
-         width: 50px; 
+  height: 50px;
+  width: 50px; 
 }
 .row{
 display: flex;
 align-items: center;
+width: 100%;
 
 }
 .row input{
-          border: none;
-          font-weight: 20px;
-          font-size: 25px;
-          padding: 17px;
-          border-radius: 10px;
-          flex: 1;
-          outline: none;
-          margin-bottom: 10px;
-          background-color: rgb(238, 239, 213);
+   border: none;
+   font-weight: 20px;
+   font-size: 25px;
+   padding: 17px;
+   border-radius: 10px;
+   flex: 1;
+   outline: none;
+   margin-bottom: 10px;
+   background-color: rgb(238, 239, 213);
 }
 button{
-          border-radius: 10px;
-          background-color: rgb(255, 147, 23);
-          color: white;
-          height: 57px;
-          width: 70px;
-          border: none;
-          text-align: center;
-          outline: none;
-          font-size: 19px;
-          cursor: pointer;
-          margin-bottom: 10px;
-          
+   border-radius: 10px;
+   background-color: rgb(255, 147, 23);
+   color: white;
+   height: 57px;
+   width: 70px;
+   border: none;
+   text-align: center;
+   outline: none;
+   font-size: 19px;
+   cursor: pointer;
+   margin-bottom: 10px;
+   
 }
 ul li{
-          list-style: none;
-          font-size: 30px;
-          padding: 9px 10px 10px 46px;
-          position: relative;
+   list-style: none;
+   font-size: 30px;
+   padding: 9px 10px 10px 46px;
+   position: relative;
 }
 
 ul li::before{
-          content: '';
-          position: absolute;
-          height: 28px;
-          width: 28px;
-          top:12px;
-          left: 5px;
-          background-image: url(/img/square.png);  /* le box vide avant la tache*/
-          background-size: cover;
-          background-position: center;
+   content: '';
+   position: absolute;
+   height: 28px;
+   width: 28px;
+   top:12px;
+   left: 5px;
+   background-image: url(/img/square.png);  /* le box vide avant la tache*/
+   background-size: cover;
+   background-position: center;
 }
 
 ul li.checked{
@@ -100,14 +128,14 @@ background-image: url(/img/cocher.png);    /*le box avec le checked mark */
 
 }
 ul li span{
-          position: absolute;
-          right: 0;
-          top: 5px;
-          width: 40px;
-          height: 40px;
-          font-size: 22px;
-          line-height: 40px;
-          text-align: center;
+   position: absolute;
+   right: 0;
+   top: 5px;
+   width: 40px;
+   height: 40px;
+   font-size: 22px;
+   line-height: 40px;
+   text-align: center;
 }
 
 ul li span:hover{
@@ -116,66 +144,51 @@ border-radius: 50%;
 cursor: pointer;
 }
 
-
-@media only screen and (max-width: 600px) {
-        .To-Do{
-          width: 100%;
-        }
-        .row{
-          flex-direction: column;
-
-        }
-      
-
-          .row input{
-                   
-                    font-weight: 15px;
-                    padding: 15px;
-                    width: 100%;
-                  
-                    
-          }
-          button{
-                    border-radius: 10px;
-                    height: 35px;
-                    width: 60px;
-                    margin-bottom: 10px;
-                    
-                    
-          }
-         
-        }
-
-        @media only screen and (max-width: 425px) and (min-width:320px){
-          button{
-            height:30px ;
-            width: 100%;
-            border-radius: 4px;
-            font-size: 12px;
-          }
-          .row input{
-            padding: 12px;
-            font-size: 12px;
-         
-          }
-          
-         .To-Do{
-          margin-top: 50px;
-         }
-          .To-Do h2 img{
-            height: 30px;
-            width: 30px; 
-   }
-   .To-Do h2{
+@media screen and (min-width:320px) and (max-width:768px) {
+  #motivationBox{
+    width: 100%;
+    margin-left: 7%;
+    
+  }
+  #motivation{
     font-size: 20px;
-   }
-            .container h1{
-              font-size: 25px;
-             
-            }
-            .container {
-              margin: 23px;
-          }
-          
-          }
-          
+  }
+  .mess{
+    font-size: 25px;
+  }
+  .container{
+    margin: 6px;
+  }
+  
+  .row{
+    flex-direction: column;
+    
+  }
+  button{
+    height: 39px;
+    width: 100%;
+    font-size: 13px;
+  }
+  .row input{
+    font-size: 14px;
+    padding: 11px;
+    width: 100%;
+   
+  }
+  
+ .To-Do{
+  width: 85%;
+ 
+ }
+  .To-Do h2 {
+    font-size: 26px;
+}
+  ul li{
+    font-size: 20px;
+    
+  }
+}
+
+
+
+ 

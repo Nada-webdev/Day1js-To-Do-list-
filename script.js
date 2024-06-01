@@ -23,12 +23,30 @@ inputBox.value="";
 saveData();
 }
 
+function MotivationMessage(){
+const message=['Good job :)',
+'i believe you can do more and more !',
+'Proud of you keep going  !!',
+'what a prodective day :)'];
+ const index=Math.floor(Math.random()* message.length);
+ return message[index];
+
+          
+}
+function displayMotivation() {
+          const motivationContainer = document.getElementById("motivationBox");
+          const motivationText = document.getElementById("motivation");
+          motivationText.innerText = MotivationMessage();
+          motivationContainer.style.display = "block"; 
+          
+      }
 
 listContainer.addEventListener("click",function(e){
 //pour avoir la tache checked si on click sure Li tagName
 if(e.target.tagName ==="LI"){
           e.target.classList.toggle("checked");
           saveData();
+        displayMotivation();
 }
 //pour supp la tache si le tagName est span (le code ascii de X)
 else if (e.target.tagName ==="SPAN"){
