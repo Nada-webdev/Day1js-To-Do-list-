@@ -9,21 +9,28 @@ if(inputBox.value === ''){
 }
 
 else{
-          //la creation de la tache 
-          let li=document.createElement("li");
-          li.innerHTML=inputBox.value;
-          listContainer.appendChild(li);
+        //   //la creation de la tache 
+        //   let li=document.createElement("li");
+        //   li.innerHTML=inputBox.value;
+        //   listContainer.appendChild(li);
 
-          //pour le X avec un code ascii
-          let span=document.createElement("span");
-          span.innerHTML="\u00d7";
-          li.appendChild(span);
+        //   //pour le X avec un code ascii
+        //   let span=document.createElement("span");
+        //   span.innerHTML="\u00d7";
+        //   li.appendChild(span);
 
-          //cree un element img 
-          let img=document.createElement("img");
-          img.src="./img/pen (1).png";
+        //   //cree un element img 
+        //   let img=document.createElement("img");
+        //   img.src="./img/pen (1).png";
          
-          li.appendChild(img);
+        //   li.appendChild(img);
+         listContainer.innerHTML+=`
+        <li>
+           ${inputBox.value}
+          <span>\u00d7</span>
+          <img src="./img/pen (1).png">
+        </li> 
+          `;
 
 }
 inputBox.value="";
