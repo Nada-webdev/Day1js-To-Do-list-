@@ -9,7 +9,7 @@ if(inputBox.value === ''){
 }
 
 else{
-    
+
         //   //la creation de la tache 
         //   let li=document.createElement("li");
         //   li.innerHTML=inputBox.value;
